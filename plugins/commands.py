@@ -22,14 +22,11 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                     InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                     InlineKeyboardButton('✘ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
-                    InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
-                    InlineKeyboardButton('〈 ʀᴇǫᴜᴇsᴛ 〉', url="https://t.me/requestbox1")
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ★', url=GRP_LNK),
+                    InlineKeyboardButton('✰ ᴀʙᴏᴜᴛ ✰', callback_data='about')
                 ],[
                     InlineKeyboardButton('༺ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ༻', url="https://t.me/rb1official")
                   ]]
@@ -48,8 +45,9 @@ async def start(client, message):
         buttons = [[
                      InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK),
+                    InlineKeyboardButton('✧ ʀǫsᴛᴅ ✧', url="htttps://t.me/requestbox2")
                 ],[
                     InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
                     InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
@@ -97,8 +95,9 @@ async def start(client, message):
         buttons = [[
                      InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK),
+                    InlineKeyboardButton('✧ ʀǫsᴛᴅ ✧', url="htttps://t.me/requestbox2")
                 ],[
                     InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
                     InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
