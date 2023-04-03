@@ -22,11 +22,14 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                     InlineKeyboardButton('✘ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                     InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ★', url=GRP_LNK),
-                    InlineKeyboardButton('✰ ᴀʙᴏᴜᴛ ✰', callback_data='about')
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
+                ],[
+                    InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
+                    InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
+                    InlineKeyboardButton('〈 ʀᴇǫᴜᴇsᴛ 〉', url="https://t.me/requestbox1")
                 ],[
                     InlineKeyboardButton('༺ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ༻', url="https://t.me/rb1official")
                   ]]
@@ -45,14 +48,15 @@ async def start(client, message):
         buttons = [[
                      InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK),
-                    InlineKeyboardButton('✧ ʀǫsᴛᴅ ✧', url="htttps://t.me/requestbox2")
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
                     InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
                     InlineKeyboardButton('〈 ʀᴇǫᴜᴇsᴛ 〉', url="https://t.me/requestbox1")
-                ]]
+                ],[
+                    InlineKeyboardButton('༺ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ༻', url="https://t.me/rb1official")
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -93,9 +97,8 @@ async def start(client, message):
         buttons = [[
                      InlineKeyboardButton('✘ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✘', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
-                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK),
-                    InlineKeyboardButton('✧ ʀǫsᴛᴅ ✧', url="htttps://t.me/requestbox2")
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴏᴡɴᴇʀ ☆', callback_data="owner_info"),
+                    InlineKeyboardButton('★ sᴜᴘᴘᴏʀᴛ ☆', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
                     InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
