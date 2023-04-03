@@ -52,9 +52,7 @@ async def start(client, message):
                     InlineKeyboardButton('✎ ʜᴇʟᴘ ✎', callback_data='help'),
                     InlineKeyboardButton('✇ ᴀʙᴏᴜᴛ ✇', callback_data='about'),
                     InlineKeyboardButton('〈 ʀᴇǫᴜᴇsᴛ 〉', url="https://t.me/requestbox1")
-                ],[
-                    InlineKeyboardButton('༺ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ༻', url="https://t.me/rb1official")
-                  ]]
+                ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
